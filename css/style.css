@@ -3,4 +3,44 @@
  * @ Create Time: Mar 07, 2020 21:30:51
  * @ Description: cPanelHosting.net
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@391&display=swap");
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  background: linear-gradient(113.59deg, #5041EB 2.86%, #48A4FA 108.1%);
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6.5% 0;
+  margin-top: 2px;
+}
+
+.hero ul {
+  list-style: none;
+  text-align: left;
+  margin-left: -2.2rem;
+  font-size: 0.8em;
+}
+
+.hero .btn-cta {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 111px;
+  color: #5041EB;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 9px 27px;
+  margin-left: 6px;
+}
+
+.hero img {
+  margin-left: 4.5em;
+}
 /*# sourceMappingURL=style.css.map */
