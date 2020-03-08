@@ -39,12 +39,15 @@ $bg-color: $lightgray;
         padding: 4.1em 0;
     }
     .heroTxt{
+        font-weight: 601;
         @include maxw(1024px){
             font-size: 2em;
         }
         @include maxw(768px){
             font-size: 1.6em;
-            font-weight: 601;
+        }
+        @include maxw(368px){
+            font-size: 1.4em;
         }
     }
     ul{

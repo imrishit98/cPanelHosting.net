@@ -38,6 +38,10 @@ body {
   }
 }
 
+.hero .heroTxt {
+  font-weight: 601;
+}
+
 @media (max-width: 1024px) {
   .hero .heroTxt {
     font-size: 2em;
@@ -47,7 +51,12 @@ body {
 @media (max-width: 768px) {
   .hero .heroTxt {
     font-size: 1.6em;
-    font-weight: 601;
+  }
+}
+
+@media (max-width: 368px) {
+  .hero .heroTxt {
+    font-size: 1.4em;
   }
 }
 
