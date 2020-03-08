@@ -4,13 +4,17 @@
  * @ Description: cPanelHosting.net
  */
 
+ @import "mixins";
+
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@391&display=swap');
 
  //variables
 $purple: #5041EB;
 $lightblue: #48A4FA;
+$lightgray: #F8F9FA;
 $primary-color: $purple;
 $secondary-color: $lightblue;
+$bg-color: $lightgray;
 
  body{
     font-family: 'Inter', sans-serif;
@@ -22,8 +26,13 @@ $secondary-color: $lightblue;
     background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
     color: white;
     align-items: center;
-    padding: 6.5% 0;
+    padding: 9.01% 0;
     margin-top: 2px;
+    .heroTxt{
+        @include maxw(768px){
+            font-size: 2.1em;
+        }
+    }
     ul{
         list-style: none;
         text-align: left;
@@ -31,7 +40,7 @@ $secondary-color: $lightblue;
         font-size: 0.8em;
     }
     .btn-cta{
-        background-color: #ffffff;
+        background-color: $bg-color;
         border: none;
         border-radius: 111px;
         color: $primary-color;
@@ -42,5 +51,10 @@ $secondary-color: $lightblue;
     }
     img{
         margin-left: 4.5em;
+        max-width: 80%;
+        max-height: 80%;
+        @include maxw(767px){
+            display: none;
+        }
     }
 }
