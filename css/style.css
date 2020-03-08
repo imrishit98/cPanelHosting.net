@@ -8,6 +8,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.navbar-toggler-icon {
+  background: linear-gradient(113.59deg, #5041EB 2.86%, #48A4FA 108.1%);
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,15 +27,34 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 6.1em 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 4.1em 0;
+  }
+}
+
+@media (max-width: 1024px) {
   .hero .heroTxt {
-    font-size: 2.1em;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .heroTxt {
+    font-size: 1.6em;
+    font-weight: 601;
   }
 }
 
 .hero ul {
   list-style: none;
   text-align: left;
-  margin-left: -2.2rem;
+  margin-left: -2.4rem;
   font-size: 0.8em;
 }
 

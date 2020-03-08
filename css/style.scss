@@ -20,6 +20,10 @@ $bg-color: $lightgray;
     font-family: 'Inter', sans-serif;
  }
 
+.navbar-toggler-icon{
+    background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
+
+}
 .hero {
     display: flex;
     height: 100%;
@@ -28,15 +32,25 @@ $bg-color: $lightgray;
     align-items: center;
     padding: 9.01% 0;
     margin-top: 2px;
+    @include maxw(768px){
+        padding: 6.1em 0;
+    }
+    @include maxw(576px){
+        padding: 4.1em 0;
+    }
     .heroTxt{
+        @include maxw(1024px){
+            font-size: 2em;
+        }
         @include maxw(768px){
-            font-size: 2.1em;
+            font-size: 1.6em;
+            font-weight: 601;
         }
     }
     ul{
         list-style: none;
         text-align: left;
-        margin-left: -2.2rem;
+        margin-left: -2.4rem;
         font-size: 0.8em;
     }
     .btn-cta{
