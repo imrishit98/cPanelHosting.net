@@ -6,9 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@391&display=swap");
 body {
   font-family: 'Inter', sans-serif;
-}
-
-.navbar-toggler-icon {
   background: linear-gradient(113.59deg, #5041EB 2.86%, #48A4FA 108.1%);
 }
 
@@ -17,7 +14,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  background: linear-gradient(113.59deg, #5041EB 2.86%, #48A4FA 108.1%);
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -50,7 +46,7 @@ body {
 
 @media (max-width: 768px) {
   .hero .heroTxt {
-    font-size: 1.6em;
+    font-size: 1.65em;
   }
 }
 
@@ -88,5 +84,49 @@ body {
   .hero img {
     display: none;
   }
+}
+
+.threeSteps {
+  color: #ffffff;
+}
+
+.threeSteps h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .threeSteps h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 575px) {
+  .threeSteps h1 {
+    font-size: 2.1em;
+  }
+}
+
+.blocks {
+  display: flexbox;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .blocks .block2 {
+    margin-top: 3em;
+  }
+  .blocks .block3 {
+    margin-top: 3em;
+  }
+}
+
+.blocks img {
+  height: 151px;
+}
+
+.blocks h3 {
+  margin-top: 0.4em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,22 +12,23 @@
 $purple: #5041EB;
 $lightblue: #48A4FA;
 $lightgray: #F8F9FA;
+$white: #ffffff;
 $primary-color: $purple;
 $secondary-color: $lightblue;
 $bg-color: $lightgray;
 
  body{
     font-family: 'Inter', sans-serif;
+    background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
  }
 
 .navbar-toggler-icon{
-    background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
+    //background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
 
 }
 .hero {
     display: flex;
     height: 100%;
-    background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
     color: white;
     align-items: center;
     padding: 9.01% 0;
@@ -44,7 +45,7 @@ $bg-color: $lightgray;
             font-size: 2em;
         }
         @include maxw(768px){
-            font-size: 1.6em;
+            font-size: 1.65em;
         }
         @include maxw(368px){
             font-size: 1.4em;
@@ -73,5 +74,41 @@ $bg-color: $lightgray;
         @include maxw(767px){
             display: none;
         }
+    }
+}
+
+.threeSteps{
+    color: $white;
+    h1{
+        
+        font-size: 2.5em;
+        font-weight: bold;
+        text-align: center;
+        @include maxw(767px){
+            font-size: 1.8em;
+        }
+        @include maxw(575px){
+            font-size: 2.1em;
+        }
+    }
+}
+
+.blocks{
+    display: flexbox;
+    text-align: center;
+    @include maxw(575px){
+        .block2{
+            margin-top: 3em;
+        }
+        .block3{
+            margin-top: 3em;
+        }
+    }
+    img{
+        height: 151px;
+    }
+    h3{
+        //font-weight: 600;
+        margin-top: 0.4em;
     }
 }
