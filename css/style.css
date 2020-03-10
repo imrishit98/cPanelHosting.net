@@ -14,6 +14,10 @@ body {
   background: linear-gradient(113.59deg, #5041EB 2.86%, #48A4FA 108.1%);
 }
 
+.navbar-light {
+  background-color: #ffffff;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
