@@ -123,10 +123,11 @@ body {
 }
 
 .blocks img {
-  height: 151px;
+  height: 141px;
 }
 
 .blocks h3 {
+  font-size: 1.5em;
   margin-top: 0.4em;
 }
 /*# sourceMappingURL=style.css.map */
