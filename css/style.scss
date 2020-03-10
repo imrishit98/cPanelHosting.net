@@ -13,19 +13,21 @@ $purple: #5041EB;
 $lightblue: #48A4FA;
 $lightgray: #F8F9FA;
 $white: #ffffff;
+$darkpurple: #370EDB;
 $primary-color: $purple;
 $secondary-color: $lightblue;
 $bg-color: $lightgray;
+
+*{
+    padding: 0;
+    margin: 0;
+}
 
  body{
     font-family: 'Inter', sans-serif;
     background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
  }
 
-.navbar-toggler-icon{
-    //background: linear-gradient(113.59deg, $primary-color 2.86%, $secondary-color 108.1%);
-
-}
 .hero {
     display: flex;
     height: 100%;
@@ -54,18 +56,12 @@ $bg-color: $lightgray;
     ul{
         list-style: none;
         text-align: left;
-        margin-left: -2.4rem;
         font-size: 0.8em;
     }
     .btn-cta{
+        @include dbtn;
         background-color: $bg-color;
-        border: none;
-        border-radius: 111px;
         color: $primary-color;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 9px 27px;
-        margin-left: 6px;
     }
     img{
         margin-left: 4.5em;
@@ -111,5 +107,43 @@ $bg-color: $lightgray;
         font-size: 1.5em;
         //font-weight: 600;
         margin-top: 0.4em;
+    }
+}
+
+.plans-area{
+    display: relative;
+    background-color: $white;
+    text-align: center;
+    color: $darkpurple;
+    font-weight: bold;
+    h2{
+        font-weight: bold;
+    }
+    .plan-img{
+        display: relative;
+        height: 181px;
+        width: 251px;
+        margin: 0 auto;
+    }
+
+    .USA-plan{
+        img{
+            text-align: center;
+            width: 251px;
+            height: 171px;
+        }
+    }
+
+    .AUS-plan{
+        img{
+            width: 196px;
+            height: 181px;
+        }
+    }
+
+    .plan-btn{
+        @include dbtn;
+        color: $white;
+        background-color: $darkpurple;
     }
 }

@@ -4,6 +4,11 @@
  * @ Description: cPanelHosting.net
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@391&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(113.59deg, #5041EB 2.86%, #48A4FA 108.1%);
@@ -59,19 +64,17 @@ body {
 .hero ul {
   list-style: none;
   text-align: left;
-  margin-left: -2.4rem;
   font-size: 0.8em;
 }
 
 .hero .btn-cta {
-  background-color: #F8F9FA;
   border: none;
-  border-radius: 111px;
-  color: #5041EB;
-  font-size: 16px;
+  border-radius: 11rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 9px 27px;
-  margin-left: 6px;
+  padding: 0.5625rem 1.6875rem;
+  background-color: #F8F9FA;
+  color: #5041EB;
 }
 
 .hero img {
@@ -129,5 +132,45 @@ body {
 .blocks h3 {
   font-size: 1.5em;
   margin-top: 0.4em;
+}
+
+.plans-area {
+  display: relative;
+  background-color: #ffffff;
+  text-align: center;
+  color: #370EDB;
+  font-weight: bold;
+}
+
+.plans-area h2 {
+  font-weight: bold;
+}
+
+.plans-area .plan-img {
+  display: relative;
+  height: 181px;
+  width: 251px;
+  margin: 0 auto;
+}
+
+.plans-area .USA-plan img {
+  text-align: center;
+  width: 251px;
+  height: 171px;
+}
+
+.plans-area .AUS-plan img {
+  width: 196px;
+  height: 181px;
+}
+
+.plans-area .plan-btn {
+  border: none;
+  border-radius: 11rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5625rem 1.6875rem;
+  color: #ffffff;
+  background-color: #370EDB;
 }
 /*# sourceMappingURL=style.css.map */
