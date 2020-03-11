@@ -13,7 +13,7 @@ $purple: #5041EB;
 $lightblue: #48A4FA;
 $lightgray: #F8F9FA;
 $white: #ffffff;
-$darkpurple: #370EDB;
+$darkpurple: #4F4BEC;
 $primary-color: $purple;
 $secondary-color: $lightblue;
 $bg-color: $lightgray;
@@ -150,19 +150,10 @@ body {
     }
 
     .USA-plan {
-        transition: all 0.1s ease-in;
-        z-index: 1;
 
-        &:hover {
-            background: rgb(72, 164, 250);
-            background: linear-gradient(165deg, rgba(72, 164, 250, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
-            color: darken($color: $secondary-color, $amount: 35%);
-
-            .plan-btn {
-                @include dbtn;
-                color: $white;
-                background-color: darken($color: $secondary-color, $amount: 45%);
-            }
+        .plan-btn {
+            @include dbtn;
+            color: $white;
         }
 
         img {
@@ -173,19 +164,10 @@ body {
     }
 
     .AUS-plan {
-        transition: all 1s ease-in;
-        z-index: 1;
 
-        &:hover {
-            background: rgb(72, 164, 250);
-            background: linear-gradient(165deg, rgba(72, 164, 250, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
-            color: darken($color: $secondary-color, $amount: 35%);
-
-            .plan-btn {
-                @include dbtn;
-                color: $white;
-                background-color: darken($color: $secondary-color, $amount: 45%);
-            }
+        .plan-btn {
+            @include dbtn;
+            color: $white;
         }
 
         img {

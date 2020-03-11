@@ -142,7 +142,7 @@ body {
   display: relative;
   background-color: #ffffff;
   text-align: center;
-  color: #370EDB;
+  color: #4F4BEC;
   font-weight: bold;
 }
 
@@ -157,26 +157,13 @@ body {
   margin: 0 auto;
 }
 
-.plans-area .USA-plan {
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  z-index: 1;
-}
-
-.plans-area .USA-plan:hover {
-  background: #48a4fa;
-  background: linear-gradient(165deg, rgba(72, 164, 250, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
-  color: #044a8c;
-}
-
-.plans-area .USA-plan:hover .plan-btn {
+.plans-area .USA-plan .plan-btn {
   border: none;
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5625rem 1.6875rem;
   color: #ffffff;
-  background-color: #02305a;
 }
 
 .plans-area .USA-plan img {
@@ -185,26 +172,13 @@ body {
   height: 171px;
 }
 
-.plans-area .AUS-plan {
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
-  z-index: 1;
-}
-
-.plans-area .AUS-plan:hover {
-  background: #48a4fa;
-  background: linear-gradient(165deg, rgba(72, 164, 250, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
-  color: #044a8c;
-}
-
-.plans-area .AUS-plan:hover .plan-btn {
+.plans-area .AUS-plan .plan-btn {
   border: none;
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5625rem 1.6875rem;
   color: #ffffff;
-  background-color: #02305a;
 }
 
 .plans-area .AUS-plan img {
@@ -219,6 +193,6 @@ body {
   font-weight: bold;
   padding: 0.5625rem 1.6875rem;
   color: #ffffff;
-  background-color: #370EDB;
+  background-color: #4F4BEC;
 }
 /*# sourceMappingURL=style.css.map */
