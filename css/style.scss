@@ -150,6 +150,21 @@ body {
     }
 
     .USA-plan {
+        transition: all 0.1s ease-in;
+        z-index: 1;
+
+        &:hover {
+            background: rgb(72, 164, 250);
+            background: linear-gradient(165deg, rgba(72, 164, 250, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
+            color: darken($color: $secondary-color, $amount: 35%);
+
+            .plan-btn {
+                @include dbtn;
+                color: $white;
+                background-color: darken($color: $secondary-color, $amount: 45%);
+            }
+        }
+
         img {
             text-align: center;
             width: 251px;
@@ -158,6 +173,21 @@ body {
     }
 
     .AUS-plan {
+        transition: all 1s ease-in;
+        z-index: 1;
+
+        &:hover {
+            background: rgb(72, 164, 250);
+            background: linear-gradient(165deg, rgba(72, 164, 250, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
+            color: darken($color: $secondary-color, $amount: 35%);
+
+            .plan-btn {
+                @include dbtn;
+                color: $white;
+                background-color: darken($color: $secondary-color, $amount: 45%);
+            }
+        }
+
         img {
             width: 196px;
             height: 181px;
