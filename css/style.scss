@@ -89,20 +89,20 @@ body {
 
 .threeSteps {
     color: $white;
+}
 
-    h1 {
+.bigtxt {
 
-        font-size: 2.5em;
-        font-weight: bold;
-        text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
 
-        @include maxw(767px) {
-            font-size: 1.8em;
-        }
+    @include maxw(767px) {
+        font-size: 1.8em;
+    }
 
-        @include maxw(575px) {
-            font-size: 2.14em;
-        }
+    @include maxw(575px) {
+        font-size: 2.14em;
     }
 }
 
@@ -180,5 +180,14 @@ body {
         @include dbtn;
         color: $white;
         background-color: $darkpurple;
+    }
+}
+
+.apps-area {
+    color: $white;
+    text-align: center;
+
+    .iconify {
+        font-size: 4.4rem;
     }
 }

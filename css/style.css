@@ -97,20 +97,20 @@ body {
   color: #ffffff;
 }
 
-.threeSteps h1 {
+.bigtxt {
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
 }
 
 @media (max-width: 767px) {
-  .threeSteps h1 {
+  .bigtxt {
     font-size: 1.8em;
   }
 }
 
 @media (max-width: 575px) {
-  .threeSteps h1 {
+  .bigtxt {
     font-size: 2.14em;
   }
 }
@@ -194,5 +194,14 @@ body {
   padding: 0.5625rem 1.6875rem;
   color: #ffffff;
   background-color: #2f0cb9;
+}
+
+.apps-area {
+  color: #ffffff;
+  text-align: center;
+}
+
+.apps-area .iconify {
+  font-size: 4.4rem;
 }
 /*# sourceMappingURL=style.css.map */
