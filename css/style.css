@@ -201,6 +201,10 @@ body {
   text-align: center;
 }
 
+.apps-area p {
+  font-size: 1.17rem;
+}
+
 .apps-area .iconify {
   font-size: 4.4rem;
 }
