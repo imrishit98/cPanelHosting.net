@@ -195,3 +195,60 @@ body {
         font-size: 4.4rem;
     }
 }
+
+.startToday {
+    text-align: center;
+    background-color: $white;
+    border-radius: 31px;
+    color: $darkpurple;
+    font-weight: bold;
+
+    h1 {
+        font-weight: bolder;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1.1px solid $darkpurple;
+        margin-bottom: 0.77em;
+        width: 31em;
+
+        &::placeholder {
+            color: $darkpurple;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+    }
+
+    .cta-btn {
+        @include dbtn;
+        color: $white;
+        background-color: $darkpurple;
+        margin-bottom: 2rem;
+    }
+}
+
+footer {
+    background-color: darken($darkpurple, 21%);
+
+    h3 {
+        font-size: 1.67em;
+        color: lighten($secondary-color, 14%);
+    }
+
+    ul {
+        list-style: none;
+
+
+        li {
+            a {
+                color: #ffffff;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: $lightblue;
+            }
+        }
+    }
+}
