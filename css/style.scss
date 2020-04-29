@@ -194,14 +194,37 @@ body {
     .iconify {
         font-size: 4.4rem;
     }
+
+    @include maxw(696px) {
+        p {
+            font-size: 0.94rem;
+            margin: 1rem 0 2rem 0;
+        }
+    }
+
+
+}
+
+.stSec {
+    position: relative;
+    height: 221px;
+    display: flex;
+    justify-content: center;
+
+    @include maxw(696px) {
+        height: 181px;
+    }
 }
 
 .startToday {
     text-align: center;
     background-color: $white;
-    border-radius: 31px;
+    border-radius: 21px;
     color: $darkpurple;
     font-weight: bold;
+    position: absolute;
+    padding: 20px 30px;
+    overflow: hidden;
 
     h1 {
         font-weight: bolder;
@@ -212,6 +235,7 @@ body {
         border-bottom: 1.1px solid $darkpurple;
         margin-bottom: 0.77em;
         width: 31em;
+        color: $darkpurple;
 
         &::placeholder {
             color: $darkpurple;
@@ -224,9 +248,58 @@ body {
         @include dbtn;
         color: $white;
         background-color: $darkpurple;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .checks {
+        span {
+            font-size: 0.81em;
+            margin-left: -4px;
+        }
+
+        .aCheck2 {
+            margin: 0 5%;
+        }
+    }
+
+    @include maxw(696px) {
+        padding: 11px 15px;
+
+        h1 {
+            font-size: 6.1vw;
+        }
+
+        p {
+            font-size: 2.2vw;
+        }
+
+        input {
+            width: 60vw;
+
+            &::placeholder {
+                font-size: 2.5vw;
+            }
+        }
+
+        .cta-btn {
+            margin-bottom: 1em;
+            font-size: 2.4vw;
+        }
+
+
+
+        .checks {
+            span {
+                font-size: 2.2vw;
+                margin-left: -5px;
+            }
+            .aCheck2 {
+                margin: 0 0 0 6%;
+            }
+        }
     }
 }
+
 
 footer {
     background-color: darken($darkpurple, 21%);
@@ -249,6 +322,18 @@ footer {
                 text-decoration: none;
                 color: $lightblue;
             }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        border-top: 1px solid $secondary-color;
+
+        p {
+            margin-bottom: 0;
+            padding: 1.1rem 0;
+            color: #ffffff;
+            font-size: 0.76em;
         }
     }
 }

@@ -76,7 +76,7 @@ body {
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.5625rem 1.6875rem;
+  padding: 0.5em 1rem;
   background-color: #F8F9FA;
   color: #5041EB;
 }
@@ -162,7 +162,7 @@ body {
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.5625rem 1.6875rem;
+  padding: 0.5em 1rem;
   color: #ffffff;
 }
 
@@ -177,7 +177,7 @@ body {
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.5625rem 1.6875rem;
+  padding: 0.5em 1rem;
   color: #ffffff;
 }
 
@@ -191,7 +191,7 @@ body {
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.5625rem 1.6875rem;
+  padding: 0.5em 1rem;
   color: #ffffff;
   background-color: #2f0cb9;
 }
@@ -209,12 +209,39 @@ body {
   font-size: 4.4rem;
 }
 
+@media (max-width: 696px) {
+  .apps-area p {
+    font-size: 0.94rem;
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+.stSec {
+  position: relative;
+  height: 221px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 696px) {
+  .stSec {
+    height: 181px;
+  }
+}
+
 .startToday {
   text-align: center;
   background-color: #ffffff;
-  border-radius: 31px;
+  border-radius: 21px;
   color: #2f0cb9;
   font-weight: bold;
+  position: absolute;
+  padding: 20px 30px;
+  overflow: hidden;
 }
 
 .startToday h1 {
@@ -226,6 +253,7 @@ body {
   border-bottom: 1.1px solid #2f0cb9;
   margin-bottom: 0.77em;
   width: 31em;
+  color: #2f0cb9;
 }
 
 .startToday input::-webkit-input-placeholder {
@@ -257,10 +285,57 @@ body {
   border-radius: 11rem;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.5625rem 1.6875rem;
+  padding: 0.5em 1rem;
   color: #ffffff;
   background-color: #2f0cb9;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.startToday .checks span {
+  font-size: 0.81em;
+  margin-left: -4px;
+}
+
+.startToday .checks .aCheck2 {
+  margin: 0 5%;
+}
+
+@media (max-width: 696px) {
+  .startToday {
+    padding: 11px 15px;
+  }
+  .startToday h1 {
+    font-size: 6.1vw;
+  }
+  .startToday p {
+    font-size: 2.2vw;
+  }
+  .startToday input {
+    width: 60vw;
+  }
+  .startToday input::-webkit-input-placeholder {
+    font-size: 2.5vw;
+  }
+  .startToday input:-ms-input-placeholder {
+    font-size: 2.5vw;
+  }
+  .startToday input::-ms-input-placeholder {
+    font-size: 2.5vw;
+  }
+  .startToday input::placeholder {
+    font-size: 2.5vw;
+  }
+  .startToday .cta-btn {
+    margin-bottom: 1em;
+    font-size: 2.4vw;
+  }
+  .startToday .checks span {
+    font-size: 2.2vw;
+    margin-left: -5px;
+  }
+  .startToday .checks .aCheck2 {
+    margin: 0 0 0 6%;
+  }
 }
 
 footer {
@@ -283,5 +358,17 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: none;
   color: #48A4FA;
+}
+
+footer .copyright {
+  text-align: center;
+  border-top: 1px solid #48A4FA;
+}
+
+footer .copyright p {
+  margin-bottom: 0;
+  padding: 1.1rem 0;
+  color: #ffffff;
+  font-size: 0.76em;
 }
 /*# sourceMappingURL=style.css.map */
