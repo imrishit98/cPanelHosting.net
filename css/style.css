@@ -49,19 +49,14 @@ body {
 
 @media (max-width: 1024px) {
   .hero .heroTxt {
-    font-size: 2em;
+    font-size: 2.4em;
   }
 }
 
-@media (max-width: 768px) {
-  .hero .heroTxt {
-    font-size: 1.65em;
-  }
-}
-
-@media (max-width: 368px) {
-  .hero .heroTxt {
-    font-size: 1.4em;
+@media (max-width: 992px) {
+  .hero .heroTxt span {
+    display: block;
+    font-size: 0.6em;
   }
 }
 
@@ -79,11 +74,6 @@ body {
   padding: 0.5em 1rem;
   background-color: #F8F9FA;
   color: #5041EB;
-}
-
-.hero .btn-cta:focus {
-  outline: none;
-  background-color: #48A4FA;
 }
 
 .hero img {
@@ -171,11 +161,6 @@ body {
   color: #ffffff;
 }
 
-.plans-area .USA-plan .plan-btn:focus {
-  outline: none;
-  background-color: #48A4FA;
-}
-
 .plans-area .USA-plan img {
   text-align: center;
   width: 251px;
@@ -191,11 +176,6 @@ body {
   color: #ffffff;
 }
 
-.plans-area .AUS-plan .plan-btn:focus {
-  outline: none;
-  background-color: #48A4FA;
-}
-
 .plans-area .AUS-plan img {
   width: 196px;
   height: 181px;
@@ -209,11 +189,6 @@ body {
   padding: 0.5em 1rem;
   color: #ffffff;
   background-color: #2f0cb9;
-}
-
-.plans-area .plan-btn:focus {
-  outline: none;
-  background-color: #48A4FA;
 }
 
 .apps-area {
@@ -313,11 +288,6 @@ body {
   color: #ffffff;
   background-color: #2f0cb9;
   margin-bottom: 1rem;
-}
-
-.startToday .cta-btn:focus {
-  outline: none;
-  background-color: #48A4FA;
 }
 
 .startToday .checks span {
