@@ -55,7 +55,7 @@ body {
             font-size: 2.4em;
         }
 
-        @include maxw(992px) {
+        @include maxw(993px) {
             span {
                 display: block;
                 font-size: 0.6em;
@@ -100,9 +100,9 @@ body {
         font-size: 1.8em;
     }
 
-    @include maxw(575px) {
+    /* @include maxw(575px) {
         font-size: 2.14em;
-    }
+    } */
 }
 
 .blocks {
@@ -136,8 +136,20 @@ body {
     color: $darkpurple;
     font-weight: bold;
 
+    @include maxw(993px) {
+        font-size: 0.7em;
+    }
+
     h2 {
         font-weight: bold;
+
+        sup {
+            font-size: 0.6em;
+        }
+
+        @include maxw(993px) {
+            font-size: 1.4em;
+        }
     }
 
     .plan-img {
@@ -145,6 +157,11 @@ body {
         height: 181px;
         width: 251px;
         margin: 0 auto;
+
+        @include maxw(993px) {
+            height: 135px;
+            width: auto;
+        }
     }
 
     .USA-plan {
@@ -152,12 +169,21 @@ body {
         .plan-btn {
             @include dbtn;
             color: $white;
+
+            @include maxw(993px) {
+                font-size: 1em;
+            }
         }
 
         img {
             text-align: center;
             width: 251px;
             height: 171px;
+
+            @include maxw(993px) {
+                height: 100%;
+                width: auto;
+            }
         }
     }
 
@@ -166,11 +192,20 @@ body {
         .plan-btn {
             @include dbtn;
             color: $white;
+
+            @include maxw(993px) {
+                font-size: 1em;
+            }
         }
 
         img {
             width: 196px;
             height: 181px;
+
+            @include maxw(993px) {
+                height: 100%;
+                width: auto;
+            }
         }
     }
 
@@ -193,13 +228,26 @@ body {
         font-size: 4.4rem;
     }
 
-    @include maxw(696px) {
+    @include maxw(767px) {
         p {
             font-size: 0.94rem;
             margin: 1rem 0 2rem 0;
         }
+
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        .iconify {
+            font-size: 3.4rem;
+        }
     }
 
+    @include maxw(767px) {
+        p {
+            font-size: 2.4vw;
+        }
+    }
 
 }
 

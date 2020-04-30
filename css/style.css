@@ -53,7 +53,7 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
   .hero .heroTxt span {
     display: block;
     font-size: 0.6em;
@@ -96,17 +96,14 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
+  /* @include maxw(575px) {
+        font-size: 2.14em;
+    } */
 }
 
 @media (max-width: 767px) {
   .bigtxt {
     font-size: 1.8em;
-  }
-}
-
-@media (max-width: 575px) {
-  .bigtxt {
-    font-size: 2.14em;
   }
 }
 
@@ -141,8 +138,24 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 993px) {
+  .plans-area {
+    font-size: 0.7em;
+  }
+}
+
 .plans-area h2 {
   font-weight: bold;
+}
+
+.plans-area h2 sup {
+  font-size: 0.6em;
+}
+
+@media (max-width: 993px) {
+  .plans-area h2 {
+    font-size: 1.4em;
+  }
 }
 
 .plans-area .plan-img {
@@ -150,6 +163,13 @@ body {
   height: 181px;
   width: 251px;
   margin: 0 auto;
+}
+
+@media (max-width: 993px) {
+  .plans-area .plan-img {
+    height: 135px;
+    width: auto;
+  }
 }
 
 .plans-area .USA-plan .plan-btn {
@@ -161,10 +181,23 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 993px) {
+  .plans-area .USA-plan .plan-btn {
+    font-size: 1em;
+  }
+}
+
 .plans-area .USA-plan img {
   text-align: center;
   width: 251px;
   height: 171px;
+}
+
+@media (max-width: 993px) {
+  .plans-area .USA-plan img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .plans-area .AUS-plan .plan-btn {
@@ -176,9 +209,22 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 993px) {
+  .plans-area .AUS-plan .plan-btn {
+    font-size: 1em;
+  }
+}
+
 .plans-area .AUS-plan img {
   width: 196px;
   height: 181px;
+}
+
+@media (max-width: 993px) {
+  .plans-area .AUS-plan img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .plans-area .plan-btn {
@@ -204,10 +250,22 @@ body {
   font-size: 4.4rem;
 }
 
-@media (max-width: 696px) {
+@media (max-width: 767px) {
   .apps-area p {
     font-size: 0.94rem;
     margin: 1rem 0 2rem 0;
+  }
+  .apps-area h3 {
+    font-size: 1.1rem;
+  }
+  .apps-area .iconify {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .apps-area p {
+    font-size: 2.4vw;
   }
 }
 
