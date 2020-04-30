@@ -16,4 +16,9 @@
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5em 1rem;
+
+  &:focus {
+    outline: none;
+    background-color: #48A4FA;
+  }
 }
